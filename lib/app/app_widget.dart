@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../presentation/shared/theme/app_theme.dart';
+
 class AppWidget extends StatefulWidget {
 
   const AppWidget._internal(); // ? Private Named Constructor
@@ -15,11 +17,8 @@ class AppWidget extends StatefulWidget {
 class _AppWidgetState extends State<AppWidget> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text(''),
-      ),
-      body: Container(),
+    return MaterialApp(
+      theme: AppTheme.themeData,
     );
   }
 }
