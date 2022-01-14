@@ -14,14 +14,12 @@ class SplashPage extends StatefulWidget {
 }
 
 class _SplashPageState extends State<SplashPage> {
-  late Timer? _timer;
-
   _goToOnboarding() {
     Navigator.pushReplacementNamed(context, RouterManager.onBoardingRoute);
   }
 
   _startDelay() {
-    _timer = Timer(const Duration(seconds: 4), _goToOnboarding);
+    Timer(const Duration(seconds: 4), _goToOnboarding);
   }
 
   @override
