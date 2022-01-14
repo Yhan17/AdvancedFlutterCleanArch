@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yhan_advanced_clean_arch/presentation/shared/theme/app_colors.dart';
 
 class OnboardingPage extends StatefulWidget {
   const OnboardingPage({Key? key}) : super(key: key);
@@ -11,10 +12,12 @@ class _OnboardingPageState extends State<OnboardingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(''),
+      backgroundColor: AppColors.white,
+      body: const Center(
+        child: Text(
+          'Welcome to onboaarding',
+        ),
       ),
-      body: Container(),
     );
   }
 }
