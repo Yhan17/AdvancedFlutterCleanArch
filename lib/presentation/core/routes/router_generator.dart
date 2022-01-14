@@ -10,7 +10,7 @@ import '../../pages/store_details/store_details_page.dart';
 import '../../shared/pipes/app_strings.dart';
 import 'router_manager.dart';
 
-class RouteGenerator {
+class RouterGenerator {
   static Route<dynamic> getRoute(RouteSettings routeSettings) {
     switch (routeSettings.name) {
       case RouterManager.splashRoute:
